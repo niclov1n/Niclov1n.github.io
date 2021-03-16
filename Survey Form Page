@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<main id="main">
+  <head>
+    <title>Survey Form</title>
+    <style>
+      /*http://sites.psu.edu/siowfa15/wp-content/uploads/sites/29639/2015/11/63610515_bacteria_hands.jpg*/
+      body {
+        background-image: url("http://sites.psu.edu/siowfa15/wp-content/uploads/sites/29639/2015/11/63610515_bacteria_hands.jpg");
+        background-size: cover;
+        background-positon: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        height: 100vh;
+        font-family: sans-serif;
+      }
+
+      .header {
+        padding-top: 20px;
+      }
+      .title, .description{
+        text-align: center;
+      }
+      .description {
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+      }
+      .container {
+        width: auto;
+        margin: 30px 10% 0 10%;
+        padding-right:50px;
+        padding-left:50px;
+        border-radius: 0.3rem;
+        background-color: rgba(127, 164, 201, 0.9);
+      }
+      .personal-info-group, .data-info-group {
+        font-size: 1.5rem;
+      }
+      .personal-info-group{
+        padding-bottom: 15px;
+      }
+      .personal-info-control {
+        border-radius: 7px;
+        height: 2rem;
+        width: 100%;
+        justify-content: center;
+        font-size: 1rem;
+      }
+
+      .additional-usage {
+        min-height: 100px;
+        width: 100%;
+        resize: vertical;
+        padding-bottom: 20px;
+      }
+      .submit-button{
+        display: block;
+        border: none;
+        width: 100%;
+        padding: 0.75rem 0 0.75rem 0;
+        background: #84FF5E;
+      }
+    </style>
+  </head>
+  <body>
+
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+    </script>
+
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="title">Handsanitizer Usage</h1>
+        <p id="description" class="description">How Often Do You Use Handsanitizer?<p>
+      </header>
+
+      <form id="survey-form">
+
+        <div class="personal-info-group">
+          <label for="name" id="name-label">Name</label><br>
+          <input id="name" class="personal-info-control" type="text" name="name" placeholder="Enter Your Name" required><br>
+        </div>
+
+        <div class="personal-info-group">
+          <label for="email" id="email-label">Email</label><br>
+          <input id="email" class="personal-info-control" type="email" name="email" placeholder="Enter Your Email" required><br>
+        </div>
+
+        <div class="personal-info-group">
+          <label for="number" id="number-label">Age</label><br>
+          <input id="number" class="personal-info-control" type="number" name="number" placeholder="Enter your age" min="1" max="120" required><br>
+        </div>
+
+        <div class="personal-info-group">
+          <label for="dropdown" id="dropdown-label">Where do you purchase your hand sanitizer?</label><br>
+          <select id="dropdown" class="personal-info-control" required>
+            <option value="" disabled selected hidden>Please select one</option>
+            <option value="Supermarket">Supermarket</option>
+            <option value="Convenience store">Convenience store</option>
+            <option value="Drug store">Drug store</option>
+            <option value="Local market">Local market</option>
+            <option value="Discount store">Discount store</option>
+            <option value="Thrift store">Thrift store</option>
+            <option value="Other">Other</option>
+            <option value="N/A">N/A</option>
+          </select>
+        </div>
+
+        <div class="usage-radio-buttons">
+          <p class="data-info-group">How often do you use hand sanitizer?</p>
+          <label for="usage-often">
+            <input id="usage-often" type="radio" name="usage-radio" value="Often">Often
+          </label><br>
+
+          <label for="usage-sometimes">
+            <input id="usage-sometimes" type="radio" name="usage-radio" value="Sometimes">Sometimes
+          </label><br>
+
+          <label for="usage-never">
+            <input id="usage-never" type="radio" name="usage-radio" value="Never">Never
+          </label><br>
+        </div>
+
+        <div class="usage-checkboxs">
+          <p class="data-info-group">When do you use hand sanitizer?</p>
+          <label for="get-home">
+            <input id="get-home" type="checkbox" name="usage-checkbox" value="get-home">When you get home
+          </label><br>
+
+          <label for="restroom">
+            <input id="restroom" type="checkbox" name="usage-checkbox" value="restroom">After using the restroom instead of washing your hands
+          </label><br>
+
+          <label for="spot-dispenser">
+            <input id="spot-dispenser" type="checkbox" name="usage-checkbox" value="spot-dispenser">Whenever you spot a dispenser
+          </label><br>
+
+          <label for="shaking-hands">
+            <input id="shaking-hands" type="checkbox" name="usage-checkbox"value="shaking-hands">Before/after shaking someones hand
+          </label><br>
+
+          <label for="touching-objects">
+            <input id="touching-objects" type="checkbox" name="usage-checkbox"value="touching-objects">Before/after touching inanimate objects
+          </label><br>
+
+          <label for="touching-face">
+            <input id="touching-face" type="checkbox" name="usage-checkbox"value="touching-face">Before/after touching your face
+          </label><br>
+
+          <label for="eating">
+            <input id="eating" type="checkbox" name="usage-checkbox" value="eating">Before/after eating a meal/snack
+          </label><br>
+
+          <label for="other-usage">
+            <input id="other-usage" type="checkbox" name="usage-checkbox" value="Other">Other
+          </label><br>
+
+          <label for="usage-n/a">
+            <input id="usage-n/a" type="checkbox" name="usage-checkbox" value="N/A">N/A
+          </label><br>
+          </div>
+
+        <div>
+          <p class="data-info-group">Please list any additonal times that you may use hand sanitizer.</p>
+          <textarea id="additional-usage" class="additional-usage" name="additional-usage">
+          </textarea>
+        <div class="data-info-group">
+          <button id="submit" class="submit-button" type="submit">Finished!</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</main>

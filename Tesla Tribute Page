@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<main id="main">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+  <head>
+    <title id="title">Nikola Tesla Tribute Page</title>
+    <style>
+      main {
+        font-family: Raleway, monospace;
+      }
+      h1, article {
+        background: #C9C8C8;
+        border-color: black;
+        border-width: 5px;
+        border-style: double;
+        border-radius: 10px;
+        display: grid;
+        justify-content: center;
+        padding:0 10% 0 10%;
+
+      }
+      h2 {
+        text-align: center;
+      }
+      div {
+        display:grid;
+        justify-content: center;
+        background: #DADADA;
+        border-color: black;
+        border-width: 5px;
+        border-style: double;
+        border-radius: 10px;
+        margin: 10px 80px 10px 80px;
+        padding: 15px 4px 0 4px;
+      }
+      p {
+        justify-content: center;
+      }
+      .body-box {
+        background: linear-gradient(90deg, #69cde6, #abfaff);
+        background: url("https://st3.depositphotos.com/1025794/13845/v/450/depositphotos_138456060-stock-illustration-seamless-electricity-background-eps-10.jpg");
+
+        /*background-color: #7B7A7A;*/
+      }
+
+      .image-size {
+        display: block;
+        justify-self: center;
+        border-radius: 10px;
+        /*border-color: #E1E1E1*/
+        /*box-shadow: 5px 5px 3px #656565;*/
+        box-shadow: -5px -5px 3px #656565;
+        max-width: 100%;
+        height: auto;
+      }
+      .footer {
+        font-size: 25px;
+        text-align: center;
+      }
+
+    </style>
+  </head>
+  <body class="body-box">
+    <h1 >Nikola Tesla</h1>
+    <div id="img-div">
+      <img id="image" class="image-size" src="https://assets2.bigthink.com/system/idea_thumbnails/54733/headline/BT_Tesla_3_final.jpg?1396360622"
+       alt="A quote and picture of Nikola Tesla.">
+       <p style="text-align: center;"id="img-caption"><strong>Empowering creativity with inspiration.</strong></p>
+    </div>
+    <article id="tribute-info">
+      <h2>
+        <strong>A short timeline of Nikola Tesla's life:</strong>
+      </h2>
+      <ul>
+        <li><strong>1856</strong> - Nikola Tesla was born into the world during a severe lightning storm.</li><br>
+        <li><strong>1863</strong> - Nikola lost his brother in a riding accident, which for the time, induced visions that would remain with him for the rest of his life.</li><br>
+        <li><strong>1884</strong> - Tesla immigrated to the United States with little to no money. In order to make a living he dug ditches for a short time.</li><br>
+        <li><strong>1885</strong> - Tesla was working on patenting an arc lighting system,[60] possibly the same one he had developed at Edison.</li><br>
+        <li><strong>1895</strong> - Tesla had invited Mark Twain to take a picture infront of a Crookes tube. When the image was developed, Tesla thought it was ruined because it was splotchy and spotted. This later led to Teslas X-ray machine works.</li><br>
+        <li><strong>1898</strong> - Tesla exibited his remote control boat at the Electrical Exibition of 1898 in Madison Square Garden. The boat was completely controlled via wireless radio transmission, something that was far ahead of its time.</li><br>
+        <li><strong>1885</strong> - Tesla was working on patenting an arc lighting system,[60] possibly the same one he had developed at Edison.</li><br>
+        <li><strong>1885</strong> - Tesla was working on patenting an arc lighting system,[60] possibly the same one he had developed at Edison.</li><br>
+        <li><strong>1885</strong> - Tesla was working on patenting an arc lighting system,[60] possibly the same one he had developed at Edison.</li><br>
+        <li><strong>1885</strong> - Tesla was working on patenting an arc lighting system,[60] possibly the same one he had developed at Edison.</li><br>
+        <li><strong>1885</strong> - Tesla was working on patenting an arc lighting system,[60] possibly the same one he had developed at Edison.</li><br>
+        <li><strong>1885</strong> - Tesla was working on patenting an arc lighting system,[60] possibly the same one he had developed at Edison.</li><br>
+      </ul>
+      <footer class="footer">
+        <strong>Read more about Nikola Tesla and his esoteric lifestyle <a id="Tribute-link" target="_blank" href="https://en.wikipedia.org/wiki/Nikola_Tesla">here on Wikipedia</a>.</strong>
+      </footer>
+    </article>
+  </body>
+</main>

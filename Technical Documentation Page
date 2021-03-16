@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        display: grid;
+      }
+      h1 {
+        text-align: center;
+        padding: 0 .5rem;
+      }
+      #navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        min-width: 250px;
+        height: 100%;
+        padding: 0;
+        background-color: white;
+        color: black;
+        border-right: solid;
+      }
+      #navbar ul {
+        height: 85.5%;
+        padding: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
+      #navbar li {
+        position: relative;
+        list-style: none;
+        padding: 0.5rem 1rem;
+        overflow-y: auto;
+      }
+      #navbar li hr {
+        padding: 0;
+        width: 100%;
+        background-color: black;
+      }
+      #navbar a {
+        display: block;
+        color: black;
+        text-decoration: none;
+      }
+      #navbar a:hover {
+        color: purple;
+        text-decoration: underline;
+      }
+      @media (min-width: 469px) {
+        #navbar {
+          position: fixed;
+          top: 0;
+          width: 250px;
+          min-width: 250px;
+          height: 100%;
+          padding: 1rem 0;
+          background-color: white;
+          color: black;
+          border-right: solid;
+        }
+        #main-doc {
+          postition: relative;
+          margin-left: 275px;
+          padding: 0 1rem;
+          width: auto;
+        }
+    }
+      @media (max-width: 468px) {
+        #navbar {
+          position: fixed;
+          top: 0;
+          height: 275px;
+          min-height: 275px;
+          width: 100%;
+          padding: 0;
+          background-color: white;
+          color: black;
+          border-bottom: solid;
+      }
+      #navbar ul {
+        height: 75.5%;
+        padding: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
+      #navbar li {
+        position: relative;
+        list-style: none;
+        padding: 0.5rem 1rem;
+        overflow-y: auto;
+      }
+      #main-doc {
+        postition: relative;
+        margin-top: 275px;
+        width: auto;
+      }
+    }
+    </style>
+  </head>
+<main id="main-doc">
+  <body>
+    <nav id="navbar">
+      <header><h1>Glassblowing: Creating A Simple Vessel</h1></header>
+        <ul>
+          <hr><li><a class="nav-link" href="#Introduction">Introduction</a></li><hr>
+          <li><a class="nav-link" href="#Equipment">Equipment</a></li><hr>
+          <li><a class="nav-link" href="#Gathering_Glass">Gathering Glass</a>
+          </li><hr>
+          <li><a class="nav-link" href="#Blocking">Blocking</a></li><hr>
+          <li><a class="nav-link" href="#Reheating">Reheating</a></li><hr>
+          <li><a class="nav-link" href="#Shaping_and_Blowing">
+            Shaping and Blowing</a></li><hr>
+          <li><a class="nav-link" href="#Marvering">Marvering</a></li><hr>
+          <li><a class="nav-link" href="#Necking">Necking</a></li><hr>
+          <li><a class="nav-link" href="#Flattening_the_Bottom">
+            Flattening the Bottom</a></li><hr>
+          <li><a class="nav-link" href="#Attaching_A_Punty_and_Breaking_Off">
+            Attaching A Punty and Breaking Off</a></li><hr>
+          <li><a class="nav-link" href="#Finishing_and_Annealing">
+            Finishing and Annealing</a></li><hr>
+          <li><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+    </nav>
+    <script type="text/javascript"
+      src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+    </script>
+    <section class="main-section" id="Introduction">
+      <header>
+        <h2>Introduction</h2>
+      </header>
+        <p>Glassblowing has been around for thousands of years and used by many
+        cultures. There are two main facets to the glassblowing realm; one is
+        tableware such as cups and dishes and the other is art. While it is often
+        common that the two were mixed together to form artistic tableware.
+        Contemporary glassworking techniques are still very similar to those which
+        were used over the past thousand years.</p>
+        <p>The glass used in glassblowing is usually soda-lime glass. This is
+        made of sand and soda lime ash along with a few other additives in a
+        furnace. The glass is transferred from a crucible in the furnace into a
+        blowpipe so that air can be puffed into it. The glass is then formed
+        and reheated repeatedly until the desired end goal is achieved. The
+        finished product is then put into an annealer oven to slowly come down
+        to room temperature.</p>
+    </section>
+
+    <section class="main-section" id="Equipment">
+      <header>
+        <h2>Equipment</h2>
+      </header>
+        <p>Tools used for glassblowing are fairly universal between artists.
+        The essential shop tools stationed in every hotshop are the:</p>
+        <ul>
+          <li><strong>Glass Melting Furnace</strong> - This is a well insulated
+          container made of fire bricks and cement. A crucible resides inside of
+          the <code>furnace</code> and is what holds the molten glass. The
+          crucible is able to withstand the extreme temperatures usually
+          produced by the gas torches to heat the furnace.</li><br>
+          <li><strong>Glory Hole</strong> - Once the glass had been gathered,
+          the <code>glory hole</code> is used to reheat glass to its working
+          temperature. There are rotating doors on the front of the <code>glory
+          hole</code> that can be opened and closed to allow for bigger pieces
+          to move in and out of the glory hole.</li><br>
+          <li><strong>Yolk</strong> - Something is needed to support the blowpipe
+          or punty as there is a large moment applied on your wrists with a heavy
+          mass on the other end. The <code>yolk</code> is a mobile piece of
+          equipment responsible for supporting the blowpipe or punty as it is
+          placed into the glory hole. </li><br>
+          <li><strong>Bench</strong> - Standing all day in the hotshop would get
+          very strenuous on the body and isn't comfortable. <code>Benches</code>
+          in the hotshop are specially made with extension bars for the blowpipe
+          or punty to sit and be rolled on while working on the hot glass. The
+          glassblower sits on the </code>bench</code> with the blowpipe or punty
+          above their lap.</li><br>
+          <li><strong>Marver</strong> - A <code>marver</code> is a large smooth
+          steel surface used to roll glass back and forth on to shape and cool
+          it.</li><br>
+          <li><strong>Pipe Warmer</strong> - Blowpipes and punties need to be
+          heated before they are able to be dipped into the molten glass so that
+          the glass will stick to them. <code>Pipe warmers</code> are small
+          furnaces, usually electric, that are used to preform this function.
+          </li><br>
+          <li><strong>Pipe Cooler</strong> - As the blowpipes and punties are
+          made of metal they conduct heat all the way up to the handle. This can
+          cause injury to the glassblower, so a <code>pipe cooler</code> is used
+          to cool down pipes with stream of water.</li><br>
+          <li><strong>Break Off Box</strong> - The <code>break off box</code> is
+          used to catch the final piece oncew it is all finished and knocked off
+          of the punty before it goes into the annealer.</li>
+        </ul>
+        <p>The essential hand tools in every hotshop are:</p>
+        <ul>
+          <li><strong>Blowpipes and Puntys</strong> - <code>Blowpipes</code> are
+          hollow steel tubes that are used to gather glass and blow air into it.
+          <code>Puntys</code> are solid steel rods that are used as handles to
+          attach to other glass pieces.</li><br>
+          <li><strong>Blocks</strong> - Usually made of cherry wood, these
+          carved <code>blocks</code> look like deep spoons with a cut out in
+          the side. They are used to shape the gathers and small bubbles.
+          </li><br>
+          <li><strong>Wet Newspaper</strong> - <code>Wet newspaper</code> is
+          used to shape larger bubbles by hand and get more organic looking
+          shapes into the glass.</li><br>
+          <li><strong>Jacks</strong> - <code>Jacks</code> are use to neck the
+          sculpture, cut lines into the work or for sculpting.</li><br>
+          <li><strong>Tweezers</strong> - Mainly used for sculpting purposes,
+          <code>tweezers</code> can also be used to guide tools or pipes/rods
+          while working.</li><br>
+          <li><strong>Shears</strong> - <code>Shears</code> are robust scissors
+          used to trim or cut the glass.</li><br>
+          <li><strong>Sophiettas</strong> - If a piece had already been broken off
+          of the blowpipe, a <code>sophietta</code> allows for air to be blown
+          directly into the piece through an existing hole.</li><br>
+          <li><strong>Paddle</strong> - This is a wooden <code>paddle</code>
+          used to flatten the bottom of the vessel as well as a heat sheild when
+          working at the bench.</li><br>
+          <li><strong>Hand torches</strong> - <code>Hand torches</code> are used
+          to warm up the connection point if the glassblower senses that the
+          punty or blowpipe is getting too cold. It can also be used to provide
+          more heat when stretching the glass.</li><br>
+
+        </ul>
+        <p>Don't forget to use the proper safety equipment while working such as
+        safety glasses and long-sleeve clothing that won't melt or burn, also
+        to have a first aid kit around. "Blood, sweat and tears" isn't a saying
+        just to be taken literally in the hotshop; it's a dangerous place!</p>
+    </section>
+
+    <section class="main-section" id="Gathering_Glass">
+      <header>
+        <h2>Gathering Glass</h2>
+      </header>
+        <p>To start the vessel making process you need to gather the glass onto
+        your heated blowpipe. This is done by dipping the blowpipe into the
+        crucible at an angle of about 45 degrees and rotating to accumulate
+        glass. Once you've gathered up as much as you can in one gather, pull
+        the blowpipe out of the furnace and keep it rotating. This will make a
+        nice ball on the end of the blowpipe. If you want to elongate the gather
+        orient the pipe downward, and vise versa if you want to shorten the
+        gather and make it more stout.</p>
+        <p>Depending on the size of the vessel that you want to make you may have
+        to repeat the gather process multiple times. Swiftness is key as the
+        previous gathers can melt off of blowpipe back into the furnace. </p>
+        <p>There are two main methods to obtain a gather. They are the following:
+        </p>
+        <ol>
+          <li><strong>The Coat Method</strong> - With this method you get the
+            cleanest and most even gather. However, this method adds the least
+            amount of glass to the gather each time. After rotating in the
+            crucible a few times withdraw while still rotating, trailing off
+            any excess glass.</li><br>
+          <li><strong>The Collection Method</strong> - This method gathers a
+            large clump of glass that is not very even around the center of the
+            blowpipe. It gathers the most amount of glass between the two
+            methods. Dip the blowpipe into the crucible and keep turning. Once
+            the gather is large enough for your liking pull out the gather and
+            keep rotating. Try not to trail the excess glass off.</li>
+        </ol>
+        </p>
+    </section>
+
+    <section class="main-section" id="Blocking">
+      <header>
+        <h2>Blocking</h2>
+      </header>
+        <p>Now that you have a gather the size that you want to work with it is
+        time to even it out.  Sit down at the bench and place the blowpipe on
+        it, keep it rolling back and forth. Take the ladle-looking wooden
+        block out of the water bucket (if it was not in the bucket before you
+        started, make sure that you place it there before starting) and start
+        to shape the glob of glass into a nice bubble shape.</p>
+        <p>Put a few puffs of air into the blowpipe to begin forming a bubble
+        inside of the molten glass. Make sure not to puff to hard as you can
+        blow out the glass very thin and pop it, like popping bubble gum. If
+        the block starts smoking too much re-dip it into the water bucket to
+        get it wet again. Use the block until the glass has a nice even shape
+        suitable for gathering over or blowing out.</p>
+    </section>
+
+    <section class="main-section" id="Reheating">
+      <header>
+        <h2>Reheating</h2>
+      </header>
+        <p>Reheating will consume about half of the time you spend while working
+        in the hotshop as a glassblower. This process is self-explanatory.
+        When the glass gets too cold to work, it needs to be warmed back up to
+        working temperature. First the heat shield doors need to be moved out
+        of the way (by an assistant) so that you can enter the glass into the
+        glory hole. The doors are then shut to keep the heat in the furnace
+        and begin to bake the glass. Position the glass so that you are only
+        heating up the areas that you want to work with the torch inside. If
+        you would like a slower heating process, place the piece in the other
+        half of the glory hole, opposite the burner. If you would like to heat
+        up the glass faster, place it close to the burner so that the flame is
+        touching it.</p>
+        <p>When the heat shield doors are closed, the piece is considered to
+        be enclosed or “boxed in”. A large amount of heat is radiated off
+        the doors and back into the glory hole, so the closer you can get
+        your piece to the doors the faster it will heat up. Be careful not
+        to touch the doors on the way in or out, or while spinning the piece
+        inside as you will get dust on it and potentially even stick to the
+        glory hole. The faster you spin the pipe while the glass is hot, the
+        wider and shorter it will get. Depending on the shape of the vessel that
+        you want, you can use this to your advantage. Make sure to keep the
+        piece you are working on centered on the pipe while spinning it or else
+        you will encounter problems later on. </p>
+        <p>While reheating, you will want to position yourself in a spot where
+        you feel comfortable working. You don’t want to stand too close to the
+        glory hole as it is very hot, but you also don’t want to stand too far
+        away to make it comfortable in your wrists. Maintaining control while
+        also remaining relatively cool is the main goal hear. Try not to heat
+        too deeply in the glory hole as it will heat your pipe up unnecessarily.
+        </p>
+    </section>
+
+    <section class="main-section" id="Shaping_and_Blowing">
+      <header>
+        <h2>Shaping and Blowing</h2>
+      </header>
+        <p>After reheating the piece, it is time to shape it and make it bigger
+        if need be. By blowing a few puffs of air into the through the blowpipe
+        the glass will expand at the hottest and least resistive parts. Take it
+        step by step as to not over inflate the glass past the desired size or
+        pop it. You can blow against the glass to solidify the outside. </p>
+        <p>Once it’s at the right size set it on the bench and keep it rotating
+        back and forth. You can take your wet news paper and start to shape it
+        (dampen it if it is too dry). The newspaper needs to be damp so that the
+        steam created between the paper and glass will protect the paper and
+        your hand. Using the newspaper will produce more organic shapes in the
+        glass and allow you to “feel” the glass more. Start at the neck area
+        (the connection between the blowpipe and the glass) and then work out
+        toward the bottom of the piece. Make sure that the neck is cooled so
+        that it is stable enough to support the rest of the piece. Let gravity
+        do the work here, don’t try to brute force the shape into existence.</p>
+        <p>When the newspaper starts to smoke excessively, dampen it again. If
+        the paper begins to combust, the ash can stick to the glass and ruin
+        your work. New newspaper blocks may need to be broken in a few times to
+        form a nice layer of carbon on them. After the layer of carbon forms,
+        the newspaper shouldn’t need too much water and won’t burn easily.</p>
+    </section>
+
+    <section class="main-section" id="Marvering">
+      <header>
+        <h2>Marvering</h2>
+      </header>
+        <p>If you need a longer, cylindrical shape you can use the marver table,
+        rolling the hot glass back and forth elongating the piece and cooling it.
+        Changing the angle of the pipe is how you change the shape of the piece
+        you’re working. You can also orient the pipe downward to make more of a
+        conical shape as you roll back and forth. Holding the pipe horizontally
+        with the surface of the marver will make a nice cylinder. Orienting the
+        pipe upward will cause the bottom to have a conical taper. Be careful
+        not to over do it when you are marvering as you can squish the piece in
+        the angled orientations or stretch it too long and skinny in the
+        horizontal orientation. Air marvering is also very important when trying
+        to assess the behavior of your bubble.</p>
+        <p>Marvering the hot glass is also a way to cool thin spots in the glass
+        so that they don’t get out of control. If the glass starts to get a
+        little too thin, run it over the marver a couple times and it should
+        cool enough to keep the situation under control. When changing the
+        orientation, change it quickly so that the glass doesn’t fold and you
+        get your desired shape.</p>
+    </section>
+
+    <section class="main-section" id="Necking">
+      <header>
+        <h2>Necking</h2>
+      </header>
+        <p>The goal of this process is to create a nice, clean break-off line
+        between your vessel and the pipe. First reheat the whole piece in the
+        glory hole, focus mostly where the neck is going to be. Return to the
+        bench and set the pipe down after you’re seated. Grab your jacks and
+        gently start squeezing the area where the neck is going to be, as
+        close to the blowpipe as possible. Make sure that the line is not on
+        top of the pipe or you will struggle with making a clean break. You
+        can stretch the neck out to that it becomes longer and thinner. Again,
+        this is and incremental process, so take it step by step as not to
+        over do it. If you pinch the neck too hard it can close up the vessel
+        thereby trashing your piece of work. Once satisfied with the neck of
+        your vessel go in for one more reheat. When back at the bench make
+        one final crisp line in the neck, this will be the break line.</p>
+        <p>The farther the end of the piece is away from the neck, the harder
+        it will be to neck the vessel. Hold the jacks at the same orientation
+        and move back and forth with the glass as you roll it on the bench. If
+        this is not done in harmony it is very easy to knock the vessel off
+        center.  Fix the off center vessel by allowing gravity to let the
+        piece fall back on center.</p>
+    </section>
+
+    <section class="main-section" id="Flattening_the_Bottom">
+      <header>
+        <h2>Flattening the Bottom</h2>
+      </header>
+        <p>Now reheat the glass but take care not to heat the neck up too much
+        as it may start to slump and ruin your neckline. Blow the bottom of
+        the vessel out a fit further if needed and shape it either on the
+        marver or with your newspaper to the desired shape. If there is still
+        enough heat left in the piece you can paddle the bottom and start to
+        flatten it. Reheat just the bottom again, enough to paddle it but not
+        lose its new shape. You can also use your jacks to flatten the bottom
+        of the vessel if it isn’t too large. </p>
+        <p>If the glass is too thin and too hot the bottom may concave a
+        little bit and create a “kick foot”. This effect can be avoided by
+        maintaining a thick bottom. If this happens and you'd like to make it
+        completely flat, simply blow into and try to smooth it back out. Don’t
+        push too hard when paddling the bottom as you may distort the overall
+        shape of the vessel.</p>
+    </section>
+
+    <section class="main-section" id="Attaching_A_Punty_and_Breaking_Off">
+      <header>
+        <h2>Attaching A Punty and Breaking Off</h2>
+      </header>
+        <p>This process is used to transfer the worked piece from the blowpipe
+        to the final working rod, the punty. The punty is attached on the
+        reverse axis of the vessel via a cold seal. This is a seal that is made
+        when the vessel is cooler than the glass on the punty and is much more
+        easily broken off.</p>
+        <p>There a few things that need to be checked before the punty is
+        applied. Is the vessel that your are puntying up to:</p>
+        <ul>
+          <li>on-center</li>
+          <li>blown out and shaped the way you want it to finally look</li>
+          <li>necked properly, does it have a clearly defined neckline</li>
+          <li>cool enough to punty up to and not still fluid</li>
+        </ul>
+        <p>Make sure that you are using the right diameter rod for the size
+        piece you are working on. If you are working on a small vessel, a small
+        diameter punty is suitable. However, if you are working on a larger
+        vessel then a larger punty rod is required so that the piece doesn’t
+        prematurely break off and smash into the ground. Make haste once you
+        have attached the punty as the life of your finished work may be
+        contingent on it. Lastly, the punty needs to be applied to the absolute
+        center of the vessel as you will be spinning and finishing the piece on
+        the punty.</p>
+        <p>Before making your punty <strong>MAKE SURE TO FLASH YOUR VESSEL</strong>
+        for around five seconds. After flashing your vessel place it on the
+        bench or a set of yokes. Prepare the punty by taking a small gather on
+        the end of the rod and then marvering it down. You want the glob on the
+        end of the rod to be as evenly distributed around the rod as possible so
+        that you can get a good center point. With a tipped point on the end of
+        the punty you are ready to attach it to the bottom of the vessel. Try
+        not to cool the tip of the punty too much as it needs to be hot enough
+        to stick to the vessel. Go back to the bench and grab your tweezers, use
+        them to guide the punty into place and stick it to the vessel.
+        <strong>YOU ONLY HAVE ONE ATTEMPT TO GET THIS RIGHT</strong>! Check to
+        see that the punty is and the vessel are concentric and move around
+        slightly with the tweezers to get into the right spot if necessary.</p>
+        <p>To break the vessel off of the blowpipe you now dunk your entire hand
+        while holding the tweezers into the water bucket and chill the neckline
+        by allowing the water to run off of your hand onto the neckline. This
+        should stress the glass out and crack it right at the neckline leaving
+        a nice crack that goes all the way around the neck of the piece. Do not
+        let the water fall on the piece itself as the piece will crack and your
+        work will be ruined. Then take the back end of your tweezers, while
+        holding the punty firmly and give the blowtube a nice firm tap. This
+        should break the vessel free from the pipe and remain on the punty,
+        repeat these two steps if the vessel fails to break free.</p>
+    </section>
+
+    <section class="main-section" id="Finishing_and_Annealing">
+      <header>
+        <h2>Finishing and Annealing</h2>
+      </header>
+        <p>Give the vessel one final flash in the glory hole, this time focusing
+        on the neck instead of the base. Spend a good amount of time in the
+        glory hole as it will take some time to heat the piece back up. Make
+        sure to flash the punty a few times so that it is also warmed back up,
+        if not it may break off prematurely. When the lip no longer appears to
+        be jagged from the break off go back to the bench. Using your jacks
+        open the neck up to the diameter that you desire by pinching them shut
+        and inserting them into the opening. Slowly open your jacks while
+        rotating back and forth to ream the mouth open. You may want to apply
+        some beeswax to your jacks so that the glide on the glass more smoothly
+        but be careful not to apply to much because it will drip into the piece.
+        </p>
+        <p>With the mouth of your vessel shaped to your liking it is time to
+        take the final step of breaking the vessel off of the punty and putting
+        it into the annealer. You do this the same way that you break off the
+        vessel from the blowpipe. Dip your hand into the water bucked and then
+        let the water drip onto the punty. Be sure to have it over the break off
+        box or have someone there to catch it because it will fall off of the
+        punty very shortly after shocking and tapping it. Immediately grab it
+        out of the break off box and transport it into the annealer. Try to hold
+        the vessel for as little time as possible to avoid stressing it and
+        cracking it. Do not drop it into the annealer, place it in lightly and
+        then close the doors quickly behind you.</p>
+    </section>
+
+    <section class="main-section" id="Reference">
+      <header>
+        <h2>Reference</h2>
+      </header>
+        <p>Beginning Glassblowing by Edward T. Schmid was referenced for
+          information in this page.</p>
+    </section>
+  </body>
+</main>
