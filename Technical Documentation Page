@@ -19,7 +19,6 @@
         padding: 0;
         background-color: white;
         color: black;
-        border-right: solid;
       }
       #navbar ul {
         height: 85.5%;
@@ -68,7 +67,7 @@
     }
       @media (max-width: 468px) {
         #navbar {
-          position: fixed;
+          position: relative;
           top: 0;
           height: 275px;
           min-height: 275px;
@@ -79,7 +78,7 @@
           border-bottom: solid;
       }
       #navbar ul {
-        height: 75.5%;
+        height: 72.5%;
         padding: 0;
         overflow-y: auto;
         overflow-x: hidden;
@@ -92,7 +91,6 @@
       }
       #main-doc {
         postition: relative;
-        margin-top: 275px;
         width: auto;
       }
     }
